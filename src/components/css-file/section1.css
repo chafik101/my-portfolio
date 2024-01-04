@@ -1,0 +1,142 @@
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.container-section1{
+    width: 90%;
+    height: auto;
+    background-color:#18181B;
+    border: 1px solid rgba(245, 245, 245, 0.15);
+    padding-bottom: 30px;
+}
+.bar-section1-h{
+    width: 70%;
+    height: 5px;
+    background-color: #B50000;
+    margin-left: 50px;
+}
+.container-box{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1) ;
+    grid-template-rows:repeat(3,18.5%) ;
+}
+
+
+
+
+.img-profile{
+    width: 100px;
+    height: 100px;
+    background-color:#18181B;
+    border: 1px solid rgba(245, 245, 245, 0.15);
+    animation: scaleImg 1s ;
+}
+@keyframes scaleImg{
+    from{  transform: scale(0)  ;}
+    to  {  transform: scale(1)  ;}
+}
+
+
+
+.container-info{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(4,100px) ;
+    padding-left:50px ;
+}
+
+.container-img-profile{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.container-title{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.container-para{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+.img-section1{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    padding-right: 40px;
+}
+.icons-social-media{
+    grid-column: 1/2;
+    grid-row: 5/5;
+    text-align: center;
+    display: flex;
+    justify-content:space-between ;
+    width: 70%;
+}
+
+.name{
+    margin-left: 110px;
+    color: #B50000;
+    font-family: Jua;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 0.41px;
+    text-align: start;
+}
+.span-name{
+    color: white;
+}
+.para-section1{
+    color: #FFF;
+    font-family: Jua;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.41px;
+}
+.para-special-section1{
+    color: #B50000;
+    background-color:white ;
+    border-radius: 100px;
+    padding: 5px;
+}
+.img-3d-section1{
+    border-right:5px solid#B50000; 
+
+}
+
+
+
+@media  (width<=1200px ) {
+    body{
+        background-color: aliceblue;
+    }
+    .container-section1{
+        width: 100%;
+    }
+    .img-section1{
+        display: none;
+        
+    }
+    .para-section1{
+        font-size: 20px;
+    }
+}
+
+
+@media  (width<=670px ) {
+    .container-section1{
+        padding: 0px;
+    }
+    .name{
+        font-size: 30px;
+        margin-top: 70px;
+    }
+    .para-section1{
+        font-size: 15px;
+    }
+    .icons-social-media{
+        grid-column: 1/2;
+        grid-row:4/4;  
+    }
+}

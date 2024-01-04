@@ -1,0 +1,104 @@
+
+
+.container_card{
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,33%);
+    grid-gap:20px 5px ;
+}
+.card{
+    width: 300px;
+    height: 330px;
+    border-radius: 6px;
+    border: 1px solid #027AA0;
+    background: #242426;
+    display: none;
+}
+.card:hover{
+    transform: rotate(1deg);
+    transition: 0.3s;
+}
+
+.title_card, .para_card{
+    color: #ffffff;
+    font-family: Jua;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0.41px;
+    padding-left: 10px;
+}
+.para_card{
+    font-size: 15px;
+    line-height: normal;
+}
+.link_card{
+    display: flex;
+    justify-content: end;
+    padding: 0px 10px;
+}
+.image_card{
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+    height: 160px;
+    margin: 0%;
+}
+
+.container_card::-webkit-scrollbar {
+    width: 2px;
+}
+.container_card::-webkit-scrollbar-thumb{
+    background-color: #027AA0;
+    height: 10%;
+
+}
+.container_card::-webkit-scrollbar-track{
+    background-color: #ffffff;
+}
+
+.card_animate{
+    display: block;
+    animation: animationCard 1s ;
+
+}
+
+@keyframes animationCard{
+    from{  transform: translateY(200px)  ;}
+    to  {  transform: translateY(0px)  ;}
+}
+
+
+.card_animate_hide{
+    display: none;
+    animation: animationHideCard 1s ;
+
+}
+
+@keyframes animationHideCard{
+    from{  transform: translateY(0px)  ;}
+    to  {  transform: translateY(200px)  ;}
+}
+
+
+
+
+
+@media (width<=1200px ) {
+    .container_card{
+        grid-template-columns: repeat(2,50%);
+        grid-gap:20px 0px ;
+        
+    }
+   
+}
+
+@media  (width<=670px ) {
+    .container_card{
+        grid-template-columns: repeat(1,100%); 
+    }
+}

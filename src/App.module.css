@@ -1,0 +1,15 @@
+.App{
+    margin: 0%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #027AA0;
+   
+
+}
+::-webkit-scrollbar-track{
+    background-color: #18181B;
+}
+

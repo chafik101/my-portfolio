@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.706);
+}
+
+.btn-mode{
+    width: 40px;
+    height: auto;
+    background-color: #B50000;
+    display: grid;
+    place-items: center;
+    border-radius: 100px;
+}
+.nav-bar-list-links{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0px;
+      width: 100%;
+
+}
+.nav-bar-link{
+    background-color: #B50000;
+    color: white;
+    font-family: 'Jua', sans-serif;
+    padding: 5px;
+    border-radius: 100px;
+    width: 10%;
+    text-align: center;
+}
+
+.fixed{
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.706);
+    animation: animationNav 0.4s ;
+    border-bottom: 2px solid #B50000;
+    
+}
+
+@keyframes animationNav {
+    from {  transform: translateY(-100px);}
+    to   {  transform: translateY(1px); }
+}
+
+@media  (width<=670px ) {
+    .nav-bar, .nav-bar-list-links{
+        width: 100%;
+    }
+    .nav-bar-link{
+        font-size: 10px;
+        width: 12%;
+    }
+   
+}
+
+
+.NavSombre{
+    background-color: rgba(255, 255, 255, 0.706);
+}
+#icon-sombre{
+    display: none;
+}
