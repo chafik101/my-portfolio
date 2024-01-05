@@ -16,7 +16,7 @@
     border-radius: 6px;
     border: 1px solid #027AA0;
     background: #242426;
-    display: none;
+    animation: animationCard 1s ;
 }
 .card:hover{
     transform: rotate(1deg);
@@ -61,11 +61,7 @@
     background-color: #ffffff;
 }
 
-.card_animate{
-    display: block;
-    animation: animationCard 1s ;
 
-}
 
 @keyframes animationCard{
     from{  transform: translateY(200px)  ;}
@@ -75,14 +71,11 @@
 
 .card_animate_hide{
     display: none;
-    animation: animationHideCard 1s ;
+
 
 }
 
-@keyframes animationHideCard{
-    from{  transform: translateY(0px)  ;}
-    to  {  transform: translateY(200px)  ;}
-}
+
 
 
 

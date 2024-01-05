@@ -72,6 +72,7 @@ section{
     display: flex;
     justify-content:space-between ;
     width: 70%;
+    gap: 0 20px;
 }
 
 .name{
@@ -140,6 +141,9 @@ section{
     .icons-social-media{
         grid-column: 1/2;
         grid-row:4/4;  
+    }
+    .container-info{
+        padding-left: 20px;
     }
  
 }

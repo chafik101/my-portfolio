@@ -11,25 +11,6 @@ const Section2=()=>{
     const [find_key,setfind_project] = useState('all')
       
 
-    useEffect(()=>{
-        
-        const container = document.querySelector('.container-section2')
-        const btn = document.querySelectorAll('.btn')
-
-        window.addEventListener('scroll',()=>{
-             const starF = setInterval(s,400)
-             let i = 0;
-             function s(){
-                if(window.scrollY >= container.offsetTop-300 ){
-                  btn[i++].classList.add('btn_animate')
-                }else  {
-                    btn[i++].classList.remove('btn_animate') 
-            }
-                i===btn.length? clearInterval(starF):i=i
-                
-             }
-        })
-    })
 
 
     
@@ -50,7 +31,7 @@ const Section2=()=>{
     ]
 
     return(
-        <section>
+        <section className='section3'>
             <div className='container-section2 clair' >
                 <div className='list-filter'>
                     <ul className='ul-list-filter'>

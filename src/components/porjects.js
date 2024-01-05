@@ -5,26 +5,7 @@ import img_XO from './imges/tic-tac-to.png'
 
 function Projects({find_key}){
 
-    useEffect(()=>{
-
-        const container = document.querySelector('.container-section2')
-        const card = document.querySelectorAll('.card')
-        window.addEventListener('scroll',()=>{
-            const starF = setInterval(s,400)
-            let i = 0;
-            function s(){
-               if(window.scrollY >= container.offsetTop-150 ){
-                 card[i++].classList.add('card_animate')
-               }else  {
-                   card[i++].classList.remove('card_animate') 
-           }
-               i===card.length?  clearInterval(starF) : i=i
-               
-            }
-       })
-
-    })
-
+   
 
 
     const [name_p ,setname_p] = useState(3)
