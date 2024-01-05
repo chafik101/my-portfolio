@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
 .nav-bar{
-    width: 100%;
+    width: inherit;
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.706);
+    top: 0;
+}
+header{
+    width: 100%;
 }
 
 .btn-mode{
@@ -34,13 +38,14 @@
     text-align: center;
 }
 
-.fixed{
-    position: fixed;
-
+.fixed-nav{
     background-color: rgba(0, 0, 0, 0.706);
     animation: animationNav 0.4s ;
     border-bottom: 2px solid #B50000;
-    
+    width: inherit;
+    max-width: inherit;
+    top: 0%;
+
 }
 
 @keyframes animationNav {
@@ -49,9 +54,7 @@
 }
 
 @media  (width<=670px ) {
-    .nav-bar, .nav-bar-list-links{
-        width: 100%;
-    }
+
     .nav-bar-link{
         font-size: 10px;
         width: 12%;

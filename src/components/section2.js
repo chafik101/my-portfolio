@@ -20,7 +20,7 @@ const Section2=()=>{
              const starF = setInterval(s,400)
              let i = 0;
              function s(){
-                if(window.scrollY >= container.offsetTop-150 ){
+                if(window.scrollY >= container.offsetTop-300 ){
                   btn[i++].classList.add('btn_animate')
                 }else  {
                     btn[i++].classList.remove('btn_animate') 

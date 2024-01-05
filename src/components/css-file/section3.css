@@ -137,4 +137,7 @@ form{
         .para-section3 ,.label_input1, .label_input2{
             font-size: 15px;
         }
+        .container_form{
+            padding-left:20px ;
+        }
 }

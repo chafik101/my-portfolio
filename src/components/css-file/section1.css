@@ -1,7 +1,8 @@
 
 section{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+
 }
 .container-section1{
     width: 90%;
@@ -127,6 +128,7 @@ section{
 @media  (width<=670px ) {
     .container-section1{
         padding: 0px;
+        width: 100%;
     }
     .name{
         font-size: 30px;
@@ -139,4 +141,5 @@ section{
         grid-column: 1/2;
         grid-row:4/4;  
     }
+ 
 }

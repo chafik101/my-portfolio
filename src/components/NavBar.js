@@ -7,13 +7,14 @@ function Navbar(){
     useEffect(()=>{
         window.addEventListener("scroll",()=>{
           if(window.scrollY >= 50){
-            document.querySelector('.nav-bar').classList.add('fixed')
-          }else document.querySelector('.nav-bar').classList.remove('fixed')
+            document.querySelector('.nav-bar').classList.add('fixed-nav')
+          }else document.querySelector('.nav-bar').classList.remove('fixed-nav')
         })
       })
       
     return(
-        <div className="nav-bar">
+        <header>
+          <div className="nav-bar">
             <ul className="nav-bar-list-links">
                 <li className="nav-bar-link">HOME</li>
                 <li className="nav-bar-link">PROJECT</li>
@@ -37,6 +38,7 @@ function Navbar(){
 </svg>
             </div>
         </div>
+        </header>
     )
 }
 
