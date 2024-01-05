@@ -85,13 +85,15 @@
     .container_card{
         grid-template-columns: repeat(2,50%);
         grid-gap:20px 0px ;
-        
+        width:80%;
+        place-items: center;
     }
    
 }
 
 @media  (width<=670px ) {
     .container_card{
+        width:100%;
         grid-template-columns: repeat(1,100%); 
     }
 }

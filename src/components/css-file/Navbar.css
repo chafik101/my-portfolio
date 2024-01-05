@@ -42,10 +42,10 @@ header{
     background-color: rgba(0, 0, 0, 0.706);
     animation: animationNav 0.4s ;
     border-bottom: 2px solid #B50000;
-    width: inherit;
-    max-width: inherit;
+    width: 100%;
+    max-width: 100%;
     top: 0%;
-
+    position: fixed;
 }
 
 @keyframes animationNav {
@@ -58,6 +58,9 @@ header{
     .nav-bar-link{
         font-size: 10px;
         width: 14%;
+    }
+    .fixed-nav{
+        position: relative;
     }
    
 }
